@@ -62,8 +62,8 @@ export default function Header() {
           <div className=" flex-1 border-b-2 ml-2"></div>
         </div>
         <div className=" flex w-[90%] mt-3 flex-col justify-start items-start">
-          {chats.map((chat) => (
-            <Chat text={chat} />
+          {chats.map((chat, index) => (
+            <Chat key={index} text={chat} />
           ))}
         </div>
       </div>
@@ -75,8 +75,8 @@ export default function Header() {
           <div className=" flex-1 border-b-2 ml-2"></div>
         </div>
         <div className=" flex w-[90%] mt-3 flex-col justify-start items-start">
-          {folders.map((chat) => (
-            <Folder text={chat} />
+          {folders.map((chat,index) => (
+            <Folder key={index} text={chat} />
           ))}
         </div>
       </div>
